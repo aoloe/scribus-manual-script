@@ -1,3 +1,6 @@
+move to the scripter chapter of the scribus development manual
+
+
 #Porting the Scribus Calendar to the new Scripter
 
 ## The thew Scripter
@@ -11,8 +14,8 @@
    
 - Simply ebmedded in the menu structure and allows shortcuts to be defined.
   Just add in the "structured" comments at the beginning of the file
-    \#\# shortcut = Esc,f
-    \#\# menu = &File
+      ## shortcut = Esc,f
+      ## menu = &File
 
 - Scripts in .../bin/scribus/lib/scribus/plugins/scripter/autoload are loaded on start
   The few scripts in that directory are very helpful! for understanding 
@@ -31,3 +34,6 @@ Open questions:
 But, must be further improved:
 - some small fixes in the editor (most of all the highlight color for the current line)
 - it must be easier to run again the last script you have run
+
+
+## Adding new commands
