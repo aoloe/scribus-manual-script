@@ -11,3 +11,9 @@ and, in a second step, the editors will go through the comments and integrate th
 
 - [A Byte of Python](http://www.swaroopch.com/notes/python/) by Swaroop C H.
 - [Introduction to Programming with Python](http://opentechschool.github.io/python-beginners/en/index.html) by Open Tech School.
+
+## The Python interpreter
+
+### Using the system interpreter on Windows
+
+https://wiki.scribus.net/canvas/Windows_Full_Python_Integration
