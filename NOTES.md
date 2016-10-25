@@ -17,3 +17,19 @@ and, in a second step, the editors will go through the comments and integrate th
 ### Using the system interpreter on Windows
 
 https://wiki.scribus.net/canvas/Windows_Full_Python_Integration
+
+## Debugging the scripts
+
+In the forums, Juha asks: I am running python scripts in Scribus scripter. I would like to debug these scripts. I an using system default python interpreter as instructed here: https://wiki.scribus.net/canvas/Windows_Full_Python_Integration. I am using PyCharm IDE for python but the problem is that running scripter script cannot be found in PyCharm "attach to process" list. Is there any way to debug Scribus scripts?
+
+Ale's answer:
+
+I don't know if there is a way to do it, but I can image that there is none. (or none that is easy to activate).
+
+What I've done in the past, is to mock the Scripter API and run the script outside of Scribus.
+
+You can see here, how such a "Scribus" class can look like:
+
+https://github.com/aoloe/scribus-script-repository/blob/master/typographic-grid/typographic-grid.py
+
+during the lunch break, I'll create a "standalone" script that one import the code.
