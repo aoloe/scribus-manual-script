@@ -33,3 +33,30 @@ You can see here, how such a "Scribus" class can look like:
 https://github.com/aoloe/scribus-script-repository/blob/master/typographic-grid/typographic-grid.py
 
 during the lunch break, I'll create a "standalone" script that one import the code.
+
+## Troubleshooting
+
+### Replacing text content
+
+Scribus has issues keeping the format, when replacing (or typing) text.
+
+This code will replace the text in the current frame and set it to test without losing the formatting (as moc wants to do)
+
+```py
+scribus.selectText(0, scribus.getTextLength());
+scribus.deleteText();
+scribus.insertText('test', -1);
+```
+
+this code will lose the formatting
+
+```py
+scribus.deleteText();
+scribus.insertText('test', -1);
+```
+
+this also lose the formatting:
+
+```
+scribus.setText('acbdefg');
+```
